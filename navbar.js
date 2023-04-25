@@ -23,3 +23,5 @@ $(function(){
 $.get("components/header.html", function(data){
     $("#navbar").replaceWith(data);
 });
+
+w3.includeHTML();
