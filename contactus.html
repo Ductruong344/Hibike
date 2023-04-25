@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="logo/logo-white.svg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="navbar.js"></script>
+    <script src="contactus.js"></script>
+</head>
+<body>
+    <div class="header" id="header"></div>
+    <nav id="navbar"></nav>
+    <div class="contact-us">
+        <div class="contact-container">
+            <br>
+            <ul class="bar-selection">
+                <div class="tab-container" id="form-button">
+                    <a class="form-button" href="#form-content" onclick="showForm()"><p>Form</p></a>
+                </div>                    
+                <div class="tab-container" id="location-button">
+                    <a class="map-button" href="#location-content" onclick="showMap()"><p>Location</p></a>
+                </div>
+            </ul>
+            <div id="form-content" class="tabcontent">  
+                <form action="" id="ctform">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" placeholder="Message" style="height: 30vh; width: 50vw;"></textarea>
+                
+                    <input type="submit" value="Submit" onclick="submitForm()">
+                  </form>
+            </div>
+            <div id="location-content" class="tabcontent" >
+                <ul class = "address">
+                    <li class="regions" id="indonesia">
+                        <div class="label-container"><h2>Indonesia</h2></div>
+                        <span class="adress-name"><h2>Grand Indonesia SEIBU 2nd Floor,
+                            JL. MH Thamrin, Gondangdia, Menteng, Jakarta, Indonesia</h2></span>
+                    </li>
+                    <li class="regions" id="malaysia">
+                        <div class="label-container"><h2>Malaysia</h2></div>
+                        <span class="adress-name"><h2>21st Floor, Petronas Twin Tower,
+                        Lower Ground (Concourse) Level,  Kuala Lumpur, Malaysia</h2></span>
+                    </li>
+                    <li class="regions" id="philippines">
+                        <div class="label-container"><h2>Philippines</h2></div>
+                        <span class="adress-name"><h2>HXXM+986, Quiapo, Manila, 1000 Metro Manila, Philippines</h2></span>
+                    </li>
+                    <li class="regions" id="singapore">
+                        <div class="label-container"><h2>Singapore</h2></div>
+                        <span class="adress-name"><h2>68 Orchard Rd, Singapore 238839</h2></span>
+                    </li>
+                    <li class="regions" id="thailand">
+                        <div class="label-container"><h2>Thailand</h2></div>
+                        <span class="adress-name"><h2>111 Changwattana Road, Laksi, Bangkok, Thailand 10210-0299</h2></span>
+                        <span class="adress-name"><h2>3rd Floor, CentralWorld Plaza,Ratchadamri Road Pathum Wan, Pathum Wan, Bangkok 10330 Thailand</h2></span>
+                    </li>
+                    <li class="regions" id="vietnam">
+                        <div class="label-container"><h2>Vietnam</h2></div>
+                        <span class="adress-name"><h2>15th Floor,Nam A Bank Tower 201-203 Cach Mang Thang Tam St..,Ward 4,Dist. 3, Ho Chi Minh City,Vietnam</h2></span>
+                        <span class="adress-name"><h2>2nd Floor, 248 Luong The Vinh Tower, Trung Van District, Ha Noi, Vietnam</h2></span>
+                    </li>
+                    <li class="regions" id="hongkong">
+                        <div class="label-container"><h2>Hong Kong</h2></div>
+                        <span class="adress-name"><h2>Shop B23, Basement, Sino Center, 582-592 Nathan Road, Mong Kok, Hong Kong</h2></span>
+                    </li>
+                    <li class="regions" id="taiwan">
+                        <div class="label-container"><h2>Taiwan</h2></div>
+                        <span class="adress-name"><h2>3F, No. 134, Section 4, Roosevelt Road, Zhongzheng District, Taipei City, Taiwan</h2></span>
+                        <span class="adress-name"><h2>1AB, 2nd Floor, No. 566-5, Section 2, Wenxin Road, Xitun District, Taichung City, Taiwan</h2></span>
+                    </li>
+
+                </ul>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zYdbD359mE_HBxRMTCBLaRzWmxk-izo&ehbc=2E312F&z=4"></iframe>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<footer></footer>
+</html>
